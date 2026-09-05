@@ -29,3 +29,28 @@ attack-surface monitoring tool.
 The main goal is to understand how the individual pieces of reconnaissance
 and attack-surface monitoring work by building them myself rather than just
 using existing tools.
+
+## Status
+
+Early development. Currently implemented:
+
+- Subdomain enumeration via certificate transparency logs (`crt.sh`)
+- Port scanning
+
+More functionality will be added as the project develops.
+
+## Usage
+
+Install the dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run subdomain enumeration against a domain:
+
+```bash
+python subdomains.py example.com
+```
+
+Only scan systems you own or have explicit permission to test.
