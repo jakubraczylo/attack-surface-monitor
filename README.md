@@ -36,6 +36,7 @@ Early development. Currently implemented:
 
 - Subdomain enumeration via certificate transparency logs (`crt.sh`)
 - Port scanning
+- State diffing (only alert on *new* things)
 
 More functionality will be added as the project develops.
 
