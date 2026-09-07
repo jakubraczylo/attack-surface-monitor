@@ -73,8 +73,6 @@ def send_alert(target: str, new_subdomains: set[str], new_ports: dict[str, set[i
 
 
 if __name__ == "__main__":
-    # quick manual test - set DISCORD_WEBHOOK_URL and run this directly
-    # to check the formatting actually looks right in Discord
     test_subs = {"vpn.example.com", "staging.example.com"}
     test_ports = {"www.example.com": {8080, 8443}}
     sent = send_alert("example.com", test_subs, test_ports)
